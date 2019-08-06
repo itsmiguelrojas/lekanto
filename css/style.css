@@ -1,0 +1,293 @@
+/*Import fonts*/
+
+@font-face {
+	font-family: 'Architects Daughter';
+	src: url('../fonts/ArchitectsDaughter-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Icaro';
+	src: url('../fonts/Icaro.ttf');
+}
+
+/*Universal selector*/
+
+* {
+	font-family: 'Architects Daughter', sans-serif;
+	user-select: none;
+}
+
+/*Background color*/
+
+body {
+	background-color: #17202A;
+}
+
+/*About*/
+
+.container .about span {
+	font-size: 1.7em;
+}
+
+/*Landing page*/
+
+.landing-img {
+  background-image: url('../img/daisy_flower.jpg');
+  background-position: center;
+  background-size: cover;
+  z-index: -2;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.glass {
+  background-image: url('../img/cover.png');
+	background-position: center;
+  background-size: cover;
+	opacity: 0.4;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+	-webkit-filter: blur(8px);
+	-moz-filter: blur(8px);
+	-o-filter: blur(8px);
+	-ms-filter: blur(8px);
+	filter: blur(8px);
+  animation: fadein 6s linear;
+}
+
+
+.jumbotron {
+	border-radius: 0;
+}
+
+.fullscreen {
+	height: 100vh;
+}
+
+.landing-container {
+	top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  animation: show_text 2s ease-in-out;
+}
+
+.landing-container h1 {
+	font-size: 6em;
+  text-shadow: 0 0 5px #FFFC54, 3px 3px 10px #FFFC54, 5px -5px 30px #FFFC54, -5px 5px 50px #FFFC54;
+  animation: change_font 4s step-start;
+}
+
+.landing-container h3 {
+  text-shadow: 0 0 5px #FFFC54, 3px 3px 10px #FFFC54, 5px -5px 30px #FFFC54, -5px 5px 50px #FFFC54;
+	margin-bottom: 20px;
+  animation: change_font 4.3s step-start;
+}
+
+.landing-container a {
+	animation: show_button 4.5s step-end;
+}
+
+@keyframes fadein {
+  from {opacity: 0}
+  to {opacity: 0.4}
+}
+
+@keyframes show_text {
+  from {left: -10%; opacity: 0}
+  to {left: 50%; opacity: 1}
+}
+
+@keyframes change_font {
+  to {font-family: Icaro}
+  from {font-family: 'Architects Daughter', cursive}
+}
+
+@keyframes show_button {
+	from {opacity: 0}
+	to {opacity: 1}
+}
+
+/*Main page*/
+
+.jumbotron {
+  margin: 0;
+}
+
+.img-1 {
+  background-image: url('../img/one_daisy.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 0;
+}
+
+.dropdown-menu {
+  border: 0;
+  margin: -1px 8px 8px 8px;
+  border-radius: 0;
+  text-align: center;
+  padding: 0;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu a::after {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 6px;
+  top: .8em;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: .1rem;
+  margin-right: .1rem;
+}
+
+header .navbar-collapse .header-items .dropdown .dropdown-menu .dropdown-item-container:nth-child(odd) {
+  background-color: #F1C40F;
+}
+
+header .navbar-collapse .header-items .dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: #B7950B;
+  color: #FFF;
+}
+
+.active {
+  font-weight: 600;
+}
+
+.jumbotron-divider {
+  margin: 0;
+}
+
+.navbar-brand {
+  margin: 0;
+}
+
+#site-map {
+	height: 100%;
+}
+
+#site-map .allowed a:hover {
+	text-decoration: none;
+	color: #D4AC0D;
+}
+
+h6 {
+	font-size: 1em;
+}
+
+#articles {
+	padding: 0 3em;
+}
+
+footer {
+	background-image: url('../img/flower.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+footer p {
+	font-size: 2.0vw;
+}
+
+li .fa-telegram {
+	display: none;
+}
+
+/*Aside*/
+
+aside #social li {
+	border-top: 2px #7D6608 solid;
+}
+
+aside #social li:hover{
+	background-color: #D4AC0D;
+}
+
+aside #social li a:hover {
+	color: #7D6608;
+	text-decoration: none;
+}
+
+/*Article*/
+
+article {
+	margin: 0 5.5em;
+	font-size: 1.15em;
+}
+
+p span {
+	color: #909497;
+}
+
+/*Comments*/
+
+#HCB_comment_box {
+	margin-top: 4em;
+	color: #FFF;
+}
+
+/*Media queries*/
+
+@media (max-width: 576px) {
+
+	.landing-container h1 {
+		font-size: 3.5em;
+	}
+
+	.landing-container h3 {
+		font-size: 1.2em;
+	}
+
+  .img-1 {
+    height: 25vh;
+  }
+
+  footer p {
+		font-size: 4.5vw;
+	}
+
+  button[type=submit] {
+    margin: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #F9E79F;
+    margin: 8px 0;
+  }
+
+  header .navbar-collapse .header-items .nav-item {
+    border-top: #D4AC0D 1px solid;
+    border-bottom: #D4AC0D 1px solid;
+    padding-right: 8px;
+  }
+
+  header .navbar-collapse .header-items .nav-item:last-child {
+    padding: 0 8px;
+    float: right;
+  }
+
+	.dropdown-menu {
+    margin-top: 8px;
+    text-align: right;
+  }
+
+	article {
+		margin: 0;
+	}
+
+	footer p {
+		font-size: 3.0vw;
+	}
+}
