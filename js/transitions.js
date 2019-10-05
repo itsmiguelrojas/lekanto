@@ -70,6 +70,6 @@ $(".fa-arrow-up").on('click', function () {
 //Replace "Comments"
   
   $("#HCB_comment_box h3").text(function(){
-    return $(this).replaceWith('<h3>Comentarios / Komentoj</h3>');
+    return $(this).replaceWith("<h3>Comentarios / Komentoj</h3>");
 });
 });
