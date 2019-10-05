@@ -55,7 +55,7 @@ body {
 	-o-filter: blur(8px);
 	-ms-filter: blur(8px);
 	filter: blur(8px);
-  animation: fadein 6s linear;
+  animation: fadein 3s linear;
 }
 
 
@@ -68,27 +68,27 @@ body {
 }
 
 .landing-container {
-  top: 50%;
+	top: 50%;
   left: 50%;
   position: absolute;
   transform: translate(-50%,-50%);
-  animation: show_text 1s ease-in-out;
+  animation: show_text 1.5s ease-in-out;
 }
 
 .landing-container h1 {
 	font-size: 6em;
   text-shadow: 0 0 5px #FFFC54, 3px 3px 10px #FFFC54, 5px -5px 30px #FFFC54, -5px 5px 50px #FFFC54;
-  animation: change_font 2.5s step-start;
+  animation: change_font 2s step-start;
 }
 
 .landing-container h3 {
   text-shadow: 0 0 5px #FFFC54, 3px 3px 10px #FFFC54, 5px -5px 30px #FFFC54, -5px 5px 50px #FFFC54;
 	margin-bottom: 20px;
-  animation: change_font 3s step-start;
+  animation: change_font 2.5s step-start;
 }
 
 .landing-container a {
-	animation: show_button 3s step-end;
+	animation: show_button 2.8s step-end;
 }
 
 @keyframes fadein {
@@ -223,10 +223,20 @@ aside #social li a:hover {
 article {
 	margin: 0 5.5em;
 	font-size: 1.15em;
+	padding: 2.5em 1.5em 0 1.5em;
 }
 
 p span {
 	color: #909497;
+}
+
+#story-banner {
+	height: 50vh;
+}
+
+#story-banner h1 {
+	box-shadow: 0 0 6px 10px rgba(0,0,0,0.3), 0 0 12px 20px rgba(0,0,0,0.3);
+	background-color: rgba(0,0,0,0.4);
 }
 
 /*Comments*/
@@ -253,12 +263,20 @@ p span {
   }
 
   footer p {
-		font-size: 4.5vw;
+		font-size: 3.5vw;
 	}
 
   button[type=submit] {
     margin: auto;
   }
+
+	.jumbotron h1 {
+		font-size: 2.5em;
+	}
+
+	.show-1, .show-2, .show-3 {
+		font-size: 1.5em;
+	}
 }
 
 @media (max-width: 991px) {
@@ -288,6 +306,6 @@ p span {
 	}
 
 	footer p {
-		font-size: 3.0vw;
+		font-size: 3.5vw;
 	}
 }
