@@ -66,4 +66,10 @@ $(document).ready(function(){
 $(".fa-arrow-up").on('click', function () {
    $("html, body").animate({scrollTop: 0}, 1000);
 });
+  
+//Replace "Comments"
+  
+  $("#HCB_comment_box h3").text(function(){
+    return $(this).replaceWith('<h3>Comentarios / Komentoj</h3>');
+});
 });
