@@ -254,7 +254,7 @@ p span {
 	margin: auto;
 }
 
-img .hcb-icon[alt="rss"] {
+img.hcb-icon[alt="rss"] {
 	display: none;
 }
 
