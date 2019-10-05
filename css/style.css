@@ -248,6 +248,10 @@ p span {
 	margin: auto;
 }
 
+img .hcb-icon[alt="rss"] {
+	display: none;
+}
+
 /*Media queries*/
 
 @media (max-width: 576px) {
