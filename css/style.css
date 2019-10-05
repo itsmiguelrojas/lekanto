@@ -68,27 +68,27 @@ body {
 }
 
 .landing-container {
-	top: 50%;
+  top: 50%;
   left: 50%;
   position: absolute;
   transform: translate(-50%,-50%);
-  animation: show_text 2s ease-in-out;
+  animation: show_text 1s ease-in-out;
 }
 
 .landing-container h1 {
 	font-size: 6em;
   text-shadow: 0 0 5px #FFFC54, 3px 3px 10px #FFFC54, 5px -5px 30px #FFFC54, -5px 5px 50px #FFFC54;
-  animation: change_font 4s step-start;
+  animation: change_font 2.5s step-start;
 }
 
 .landing-container h3 {
   text-shadow: 0 0 5px #FFFC54, 3px 3px 10px #FFFC54, 5px -5px 30px #FFFC54, -5px 5px 50px #FFFC54;
 	margin-bottom: 20px;
-  animation: change_font 4.3s step-start;
+  animation: change_font 3s step-start;
 }
 
 .landing-container a {
-	animation: show_button 4.5s step-end;
+	animation: show_button 3s step-end;
 }
 
 @keyframes fadein {
