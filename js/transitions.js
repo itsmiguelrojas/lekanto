@@ -52,4 +52,18 @@ $(document).ready(function(){
 
     return false;
   });
+  
+  //To top
+
+  $(window).on('scroll', function() {
+    if ($(this).scrollTop()) {
+        $('.fa-arrow-up').fadeIn();
+    } else {
+        $('.fa-arrow-up').fadeOut();
+    }
+});
+
+$(".fa-arrow-up").on('click', function () {
+   $("html, body").animate({scrollTop: 0}, 1000);
+});
 });
