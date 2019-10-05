@@ -107,8 +107,8 @@ body {
 }
 
 @keyframes show_button {
-	from {opacity: 0}
-	to {opacity: 1}
+	from {display: none}
+	to {display: initial}
 }
 
 /*Main page*/
