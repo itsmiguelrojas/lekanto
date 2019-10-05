@@ -111,6 +111,12 @@ body {
 	to {display: initial}
 }
 
+/*All pages*/
+
+.fa-arrow-up::before {
+	color: #FFF;
+}
+
 /*Main page*/
 
 .jumbotron {
