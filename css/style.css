@@ -31,33 +31,16 @@ body {
 
 /*Landing page*/
 
-.landing-img {
-  background-image: url('../img/daisy_flower.jpg');
-  background-position: center;
-  background-size: cover;
-  z-index: -2;
-  height: 100%;
-  width: 100%;
-  position: fixed;
+.parallax-window {
+		background: transparent;
+		height: 100vh;
 }
 
 .glass {
-  background-image: url('../img/cover.png');
+	background-image: url('../img/cover.png');
+	background-size: cover;
 	background-position: center;
-  background-size: cover;
-	opacity: 0.4;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-	-webkit-filter: blur(8px);
-	-moz-filter: blur(8px);
-	-o-filter: blur(8px);
-	-ms-filter: blur(8px);
-	filter: blur(8px);
-  animation: fadein 3s linear;
 }
-
 
 .jumbotron {
 	border-radius: 0;
@@ -69,36 +52,31 @@ body {
 
 .landing-container {
 	top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%,-50%);
-  animation: show_text 1.5s ease-in-out;
+  position: relative;
+  transform: translateY(-50%);
+  animation: show_text 3s ease-in-out;
 }
 
 .landing-container h1 {
 	font-size: 6em;
   text-shadow: 0 0 5px #FFFC54, 3px 3px 10px #FFFC54, 5px -5px 30px #FFFC54, -5px 5px 50px #FFFC54;
-  animation: change_font 2s step-start;
+  animation: change_font 4s step-start;
 }
 
 .landing-container h3 {
   text-shadow: 0 0 5px #FFFC54, 3px 3px 10px #FFFC54, 5px -5px 30px #FFFC54, -5px 5px 50px #FFFC54;
 	margin-bottom: 20px;
-  animation: change_font 2.5s step-start;
+  animation: change_font 4s step-start;
 }
 
-.landing-container a {
-	animation: show_button 2.8s step-end;
-}
-
-@keyframes fadein {
-  from {opacity: 0}
-  to {opacity: 0.4}
+.landing-container a, .landing-container p {
+	outline: none;
+	animation: show_button 2s ease-in-out;
 }
 
 @keyframes show_text {
-  from {left: -10%; opacity: 0}
-  to {left: 50%; opacity: 1}
+  from {opacity: 0}
+  to {opacity: 1}
 }
 
 @keyframes change_font {
@@ -107,13 +85,18 @@ body {
 }
 
 @keyframes show_button {
-	from {display: none}
-	to {display: initial}
+	from {opacity: 0}
+	to {opacity: 1}
 }
 
 /*All pages*/
 
-.fa-arrow-up::before {
+.bar {
+	width: auto;
+	height: 10px;
+}
+
+.fa-arrow-up::before, .fa-arrow-down::before {
 	color: #FFF;
 }
 
@@ -205,9 +188,9 @@ footer p {
 	font-size: 2.0vw;
 }
 
-li .fa-telegram {
+/* li .fa-telegram {
 	display: none;
-}
+} */
 
 /*Aside*/
 
@@ -243,6 +226,14 @@ p span {
 #story-banner h1 {
 	box-shadow: 0 0 6px 10px rgba(0,0,0,0.3), 0 0 12px 20px rgba(0,0,0,0.3);
 	background-color: rgba(0,0,0,0.4);
+	margin: 0;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+hr {
+	background-color: #FFF;
 }
 
 /*Comments*/
