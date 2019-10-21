@@ -52,24 +52,14 @@ $(document).ready(function(){
 
     return false;
   });
-  
-  //To top
 
-  $(window).on('scroll', function() {
-    if ($(this).scrollTop()) {
-        $('.fa-arrow-up').fadeIn();
-    } else {
-        $('.fa-arrow-up').fadeOut();
-    }
-});
+  // Scroll window 
 
-$(".fa-arrow-up").on('click', function () {
-   $("html, body").animate({scrollTop: 0}, 1000);
-});
-  
-//Replace "Comments"
-  
-  $("#HCB_comment_box h3").text(function(){
-    return $(this).replaceWith("<h3>Comentarios / Komentoj</h3>");
-});
+  $(".fa-arrow-up").on('click', function () {
+    $("html, body").animate({scrollTop: 0}, 1000);
+  });
+
+  $(".fa-arrow-down").on('click', function () {
+    $("html, body").animate({scrollTop: $(document).height()}, 1000);
+  });
 });
