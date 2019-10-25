@@ -62,4 +62,8 @@ $(document).ready(function(){
   $(".fa-arrow-down").on('click', function () {
     $("html, body").animate({scrollTop: $(document).height()}, 1000);
   });
+  
+  // Parallax Android fix
+  
+  $('#story-banner').parallax({androidFix: false});
 });
