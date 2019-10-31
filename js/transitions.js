@@ -83,7 +83,7 @@ $(document).ready(function(){
   commentElem[0].text('Komentoj / Comentarios');
   
   commentElem[1].attr('placeholder', 'Nomo / Nombre');
-  commentElem[2].attr('placeholder', 'Enigu vian komenton / Ingresa tu comentario aquí');
+  commentElem[2].attr('placeholder', 'Enigu vian komenton ĉi tie / Ingresa tu comentario aquí');
   
   commentElem[3].val('Komenti / Comentar');
   
