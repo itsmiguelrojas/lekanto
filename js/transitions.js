@@ -74,4 +74,23 @@ $(document).ready(function(){
   // Parallax Android fix
   
   $('#story-banner').parallax({androidFix: false});
+  
+  // Replace elements in comments
+  
+  var commentElem = [$('#HCB_comment_box h3'), $('#hcb_form_name'), $('#hcb_form_content'), $('#hcb_submit'), $('#HCB_comment_box label a'), $('#no_comments')];
+  
+  commentElem[0].empty();
+  commentElem[0].text('Komentoj / Comentarios');
+  
+  commentElem[1].attr('placeholder', 'Nomo / Nombre');
+  commentElem[2].attr('placeholder', 'Enigu vian komenton / Ingresa tu comentario aquí');
+  
+  commentElem[3].val('Komenti / Comentar');
+  
+  commentElem[4].empty()
+  commentElem[4].text('Aldonu bildon / Añada una imagen')
+  
+  commentElem[5].empty()
+  commentElem[5].text('Neniu ankoraŭ komentis. Estu la unua! / Nadie ha comentado aún. ¡Sé el primero!')
+  
 });
