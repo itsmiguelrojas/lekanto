@@ -245,6 +245,10 @@ img.hcb-icon[alt="rss"] {
 	display: none;
 }
 
+#HCB_comment_box #hcb_submit {
+	font-family: 'Architects Daughter', sans-serif;
+}
+
 /*Progress bar for novels*/
 
 .progress {
