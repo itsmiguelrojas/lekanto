@@ -19,6 +19,14 @@ $(document).ready(function(){
   $('.dropdown-submenu').on('hide.bs.dropdown', moveUp)
 
   //Show categories
+  
+  $('.show-1').on('click', function(){
+    if ($('#articles-1').hasClass('d-none')) {
+      $('#articles-1').removeClass('d-none');
+    } else {
+      $('#articles-1').addClass('d-none')
+    }
+  });
 
   $('.show-2').on('click', function(){
     if ($('#articles-2').hasClass('d-none')) {
