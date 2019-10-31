@@ -173,10 +173,6 @@ h6 {
 	font-size: 1em;
 }
 
-#articles {
-	padding: 0 3em;
-}
-
 footer {
 	background-image: url('../img/flower.png');
 	background-repeat: no-repeat;
@@ -247,6 +243,26 @@ hr {
 
 img.hcb-icon[alt="rss"] {
 	display: none;
+}
+
+/*Progress bar for novels*/
+
+.progress {
+	height: 30px;
+}
+
+.progress, #articles-1 .col-lg-12 img {
+	width: 20em;
+	left: 50%;
+	position: relative;
+	transform: translateX(-50%);
+}
+
+.progress-bar {
+	font-weight: bold;
+	color: #000;
+	height: 30px;
+	font-size: 1.5em;
 }
 
 /*Media queries*/
